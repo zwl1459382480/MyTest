@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <form action="#"class="login">
+        <div class="header">
+            <h1>Login Form</h1>
+            <p>×</p>
+        </div>
+        <div class="login_in">
+            <div class="user">
+                <input type="text" class="in" name="user_in" id="user_in" placeholder="Username" onfocus="user_checked()" onblur="user_move()">
+                <div id="user_msg">用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位</div>
+            </div>
+            <div class="pwd">
+                <input type="password" class="in" name="pwd_in" id="pwd_in" placeholder="······" onfocus="pwd_checked()" onblur="pwd_move()">
+                <div id="pwd_msg">密码6-12位之间，数字字母的组合</div>
+            </div>
+        </div>
+        <div class="sign_in">
+            <button class="sign_btn" type="submit">Sign in</button>
+            <a href="#">Lost your Password ?</a>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    // 1)用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位
+    //
+    // 2)密码6-12位之间，数字字母的组合
+    //
+    // 3)点击sign in 按钮时对用户名和密码进行格式校验，如果校验失败，表单不能提交;验证成功，在新的页面显示登录成功即可
+    function user_checked() {
+
+        var msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+        var div = document.getElementById("user_msg");
+        div.innerHTML = msg;
+        div.style.color = "#000";
+        div.style.display = "initial";
+    }
+    function user_move() {
+        var msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+        var div = document.getElementById("user_msg");
+        div.style.display = "none";
+        var reg = /^[0-9][0-9A-Za-z]{5,11}$/;
+        var txt = document.getElementById("user_in").value;
+        if(reg.test(txt)&&txt!=""){
+            msg="";
+        }else {
+            div.style.color = "#F00";
+            msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+            div.style.display = "initial";
+        }
+        div.innerHTML = msg;
+    }
+    function pwd_checked() {
+
+        var msg = "密码6-12位之间，数字字母的组合";
+        var div = document.getElementById("pwd_msg");
+        div.innerHTML = msg;
+        div.style.display = "initial";
+    }
+    function pwd_move() {
+        var msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+        var div = document.getElementById("pwd_msg");
+        div.style.display = "none";
+        var reg = /^[0-9][0-9A-Za-z]{5,11}$/;
+        var txt = document.getElementById("pwd_in").value;
+        if(reg.test(txt)&&txt!=""){
+            msg="";
+        }else {
+            div.style.color = "#F00";
+            msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+            div.style.display = "initial";
+        }
+        div.innerHTML = msg;
+    }
+</script>
+</body>
+</html>
