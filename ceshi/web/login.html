@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <form action="#"class="login">
+    <form action="#"class="login" autocomplete="off">
         <div class="header">
             <h1>Login Form</h1>
             <p>×</p>
@@ -66,16 +66,16 @@
         div.style.display = "initial";
     }
     function pwd_move() {
-        var msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+        var msg = "密码6-12位之间，数字字母的组合";
         var div = document.getElementById("pwd_msg");
         div.style.display = "none";
-        var reg = /^[0-9][0-9A-Za-z]{5,11}$/;
+        var reg = /^[0-9A-Za-z]{6,12}$/;
         var txt = document.getElementById("pwd_in").value;
         if(reg.test(txt)&&txt!=""){
             msg="";
         }else {
             div.style.color = "#F00";
-            msg = "用户名不能为空，必须以数字开头，可以包含小写字母和数字6-12位";
+            msg = "密码6-12位之间，数字字母的组合";
             div.style.display = "initial";
         }
         div.innerHTML = msg;
