@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #F00;
+}
+input{
+    outline: none;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.wrapper .header{
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+}
+.wrapper .header a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    color: #999;
+}
+.wrapper .header a:hover{
+    width: 100%;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    color: #999;
+}
+
+.wrapper .register{
+    width: 100%;
+    height: 70%;
+    color: #AAA;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+}
+.wrapper .register .tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+}
+.wrapper .register .tel .in_tel{
+    margin-right: 1vw;
+    width: 20vw;
+    height: 2vw;
+
+    padding-left: 1vw;
+    box-sizing: border-box;
+}
+.wrapper .register .tel p{
+    margin-right: 1vw;
+}
+.wrapper .register .pwd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+}
+.wrapper .register .pwd .in_pwd{
+    margin-right: 1vw;
+    width: 20vw;
+    height: 2vw;
+
+    padding-left: 1vw;
+    box-sizing: border-box;
+}
+.wrapper .register .pwd p{
+    margin-right: 1vw;
+}
+.wrapper .register .auth_code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+}
+.wrapper .register .auth_code .in_code{
+    margin-right: 1vw;
+    width: 20vw;
+    height: 2vw;
+
+    padding-left: 1vw;
+    box-sizing: border-box;
+}
+.wrapper .register .auth_code p{
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.wrapper .register .auth_code button{
+    width: 6vw;
+    height: 2vw;
+
+    color: #fff;
+    background-color: #0097ED;
+
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.wrapper .register .protocol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    margin-left: 5vw;
+}
+.wrapper .register .protocol a{
+    color: #0097ED;
+}
+.wrapper .register .put_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    margin-left: 5vw;
+}
+.wrapper .register .put_in .register_btn{
+    width: 8vw;
+    height: 2vw;
+
+    color: #FFFFFF;
+    background-color: #FF4500;
+
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.wrapper .register .put_in p{
+    margin-left: 1vw;
+}
+.wrapper .register .put_in p a{
+    color: #0097ED;
+}
+.wrapper .footer{
+    width: 100%;
+    font-size: 12px;
+}
+.wrapper .footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    margin-top: 2vw;
+}
+.wrapper .footer p{
+    margin-top: 1vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
